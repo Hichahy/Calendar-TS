@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+.background-container {
+  background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  width: 100%;
+  height: 500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calendar-container {
+  width: 55%;
+  position: relative;
+  top: -554px;
+  padding-top: 200px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weekdays-container {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  background: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weekday-container .week-day {
+  color: #808080;
+}
+
+.calendar {
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.calendar .week {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.calendar .week .date {
+  width: 30px;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+button {
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.datepicker-container {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background: white;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+padding: 26px 10px;
+}
+
+.datepicker-container span {
+  font-size: 20px;
+}
+
+.today {
+  background-color: rgba(148,187,233,1);
   color: white;
+  border-radius: 5px;
+  filter: drop-shadow(2px 2px 2px #6cb9fd9e)
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected {
+  background-color: #f3f3f3;
+  border-radius: 5px;
 }
