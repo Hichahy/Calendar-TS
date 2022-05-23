@@ -40,9 +40,9 @@ export const Calendar: React.FC<{}> = ({}) => {
   return (
     <div className="calendar-container">
       <div className="datepicker-container">
-        <ArrowLeftOutlinedIcon fontSize="large" color="disabled"/>
+        <ArrowLeftOutlinedIcon className="arr-ico" fontSize="large" color="disabled"/>
         <span>February 2022</span>
-        <ArrowRightOutlinedIcon fontSize="large" color="disabled"/>
+        <ArrowRightOutlinedIcon className="arr-ico" fontSize="large" color="disabled"/>
       </div>
       <div className="weekdays-container">
         {Weekdays.map((day,index) => (
