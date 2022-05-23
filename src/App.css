@@ -70,6 +70,11 @@ padding: 26px 10px;
   font-size: 20px;
 }
 
+.arr-ico :hover {
+  color: rgb(29, 29, 29);
+  cursor: pointer;
+}
+
 .today {
   background-color: rgba(148,187,233,1);
   color: white;
